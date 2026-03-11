@@ -1,0 +1,130 @@
+# ===============================
+# Node / React
+# ===============================
+
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Build folders
+build/
+dist/
+frontend/build/
+frontend/node_modules/
+
+# Optional npm cache
+.npm
+.eslintcache
+
+# ===============================
+# Environment variables
+# ===============================
+
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# ===============================
+# Logs
+# ===============================
+
+logs/
+*.log
+
+# ===============================
+# Dependency directories
+# ===============================
+
+jspm_packages/
+
+# ===============================
+# Django / Python
+# ===============================
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+backend/venv/
+
+# Python packaging
+*.egg
+*.egg-info/
+dist/
+build/
+develop-eggs/
+downloads/
+eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+
+# Django database
+db.sqlite3
+db.sqlite3-journal
+
+# Django migrations cache
+**/migrations/*.pyc
+
+# Collected static files
+staticfiles/
+
+# Media uploads
+media/
+
+# Django local settings
+local_settings.py
+
+# ===============================
+# Testing / Coverage
+# ===============================
+
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+coverage/
+
+# ===============================
+# Backend node modules (if any)
+# ===============================
+
+backend/node_modules/
+
+# ===============================
+# IDE / Editor
+# ===============================
+
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# ===============================
+# OS files
+# ===============================
+
+.DS_Store
+Thumbs.db
+
+# ===============================
+# Temporary files
+# ===============================
+
+*.tmp
+*.temp
+*.swp
