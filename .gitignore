@@ -1,0 +1,92 @@
+# =========================
+# Python / Django
+# =========================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+env/
+.venv/
+
+# Django stuff:
+*.log
+*.pot
+*.pyc
+*.sqlite3
+db.sqlite3
+media/
+
+# Django migrations (optional: if you want to keep migrations in git, remove these)
+#**/migrations/*.py
+#**/migrations/*.pyc
+#**/migrations/__pycache__/
+
+# Secret key and env variables
+*.env
+*.env.*
+
+# =========================
+# Node / React / Frontend
+# =========================
+
+# Node modules
+frontend/node_modules/
+
+# Build output
+frontend/dist/
+frontend/build/
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Local Vite cache
+frontend/.vite/
+
+# =========================
+# IDEs / OS
+# =========================
+
+# VS Code
+.vscode/
+
+# JetBrains
+*.iml
+.idea/
+
+# Mac / Linux
+.DS_Store
+*.swp
+
+# Windows
+Thumbs.db
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
