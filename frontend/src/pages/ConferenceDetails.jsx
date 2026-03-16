@@ -8,17 +8,18 @@ export default function ConferenceDetails() {
 
     useEffect(() => {
         getConferenceById(id).then((res) => setConference(res.data));
-    }, []);
+    }, [id]);
 
     if (!conference) return <p>Loading...</p>;
 
     return (
         <div>
             <h2>{conference.title}</h2>
-            <p>Date: {conference.date}</p>
+            <p>Start Date: {conference.start_date}</p>
+            <p>End Date: {conference.end_date}</p>
             <p>Location: {conference.location}</p>
 
-            <Link to={`/register/${conference.id}`}>Register</Link>
+            <Link to={`/conferences/${conference.id}/register`}>Register</Link>
         </div>
     );
 }

@@ -15,7 +15,7 @@ export default function Conferences() {
             <ul>
                 {conferences.map((c) => (
                     <li key={c.id}>
-                        <Link to={`/conference/${c.id}`}>{c.title}</Link>
+                        <Link to={`/conferences/${c.id}`}>{c.title}</Link>
                     </li>
                 ))}
             </ul>

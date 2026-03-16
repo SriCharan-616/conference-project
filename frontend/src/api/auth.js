@@ -1,4 +1,11 @@
 import axiosClient from "./axiosClient";
 
-export const loginUser = (data) => axiosClient.post("/login/", data);
-export const registerUser = (data) => axiosClient.post("/register/", data);
+// Register user
+export const registerUser = async (data) => {
+    return axiosClient.post("/register/", data);
+};
+
+// Login user
+export const loginUser = async (data) => {
+    return axiosClient.post("/login/", data);
+};
