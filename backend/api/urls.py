@@ -4,8 +4,7 @@ from . import views
 urlpatterns = [
     path("register/", views.register),
     path("login/", views.login),
-
-    path("conferences/", views.get_conferences),
+    path("conferences/", views.conferences_list_create),
     path("conferences/<int:pk>/", views.get_conference_details),
 
     path("papers/submit/", views.submit_paper),
