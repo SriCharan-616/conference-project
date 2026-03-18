@@ -14,7 +14,7 @@ export default function OrganiserConferences() {
 
   // Filter for user's own conferences
   const userConferences = conferencesData?.results?.filter(
-    (conf) => conf.organiser.id === user?.id
+    (conf) => conf?.organiser?.id === user?.id
   ) || [];
 
   const filteredConferences = userConferences.filter(

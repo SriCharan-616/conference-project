@@ -39,14 +39,16 @@ export const useCreateConference = () => {
   });
 };
 
-export const useUpdateConference = (id) => {
+export const useUpdateConference = () => {
   const queryClient = useQueryClient();
 
   return useMutation({
-    mutationFn: (data) => axiosClient.put(`/conferences/${id}/`, data),
-    onSuccess: () => {
+    mutationFn: ({ id, ...data }) =>
+      axiosClient.put(`/conferences/${id}/`, data),
+
+    onSuccess: (_, variables) => {
       queryClient.invalidateQueries({ queryKey: ["conferences"] });
-      queryClient.invalidateQueries({ queryKey: ["conference", id] });
+      queryClient.invalidateQueries({ queryKey: ["conference", variables.id] });
     },
   });
 };

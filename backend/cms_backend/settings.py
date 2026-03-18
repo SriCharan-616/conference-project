@@ -83,7 +83,7 @@ ASGI_APPLICATION = "cms_backend.asgi.application"
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
-        "HOST": os.environ.get("DB_HOST", "localhost"),  # fallback to localhost
+        "HOST": os.environ.get("DB_HOST"),  # fallback to localhost
         "PORT": os.environ.get("DB_PORT", "5432"),
         "NAME": os.environ.get("DB_NAME", "postgres"),
         "USER": os.environ.get("DB_USER", "postgres"),

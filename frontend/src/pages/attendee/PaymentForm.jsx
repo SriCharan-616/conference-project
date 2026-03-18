@@ -67,7 +67,7 @@ export default function PaymentForm() {
           <div className="card p-8 text-center">
             <p className="text-gray-500 mb-4">Registration not found</p>
             <button
-              onClick={() => navigate("/attendee/registrations")}
+              onClick={() => navigate(`/attendee/registrations`)}
               className="btn-primary"
             >
               Back to Registrations
